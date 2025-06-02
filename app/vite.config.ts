@@ -4,6 +4,7 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/ae-concept-test-1/',
   plugins: [react()],
   resolve: {
     alias: {

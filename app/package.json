@@ -2,6 +2,7 @@
   "name": "ae-concept-test-1",
   "version": "1.0.0",
   "type": "module",
+  "homepage": ".",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
