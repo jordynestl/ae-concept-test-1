@@ -21,17 +21,17 @@ export function NavHeader({ activeTab = 'fields' }: NavHeaderProps) {
           <div className="flex items-center mr-8">
             <div className="size-8 mr-2">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" className="size-full">
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2} 
-                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" 
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                 />
               </svg>
             </div>
-            <span className="font-semibold text-lg">All Ears</span>
+            <span className="font-semibold text-lg">Survey Builder for Teachers</span>
           </div>
-          
+
           {/* Navigation in the center */}
           <nav className="flex items-center border-b border-transparent flex-grow justify-center">
             <div className={`px-4 py-3 cursor-pointer hover:text-gray-600 ${activeTab === 'audience' ? 'border-b-2 border-black font-medium' : ''}`}>
@@ -47,7 +47,7 @@ export function NavHeader({ activeTab = 'fields' }: NavHeaderProps) {
               Add collaborators
             </div>
           </nav>
-          
+
           {/* User info on the right */}
           <div className="flex items-center ml-auto">
             <div className="size-8 bg-gray-300 rounded-full flex items-center justify-center text-sm font-medium">

@@ -1003,7 +1003,7 @@ export default function Soe1367SubtractBrowserAndMicrosoftTaskBar() {
       data-name="SOE / 1367 (subtract browser and microsoft task bar)"
     >
       <div className="absolute css-yqdygo font-['Chalkboard:Regular',_sans-serif] font-normal leading-[0] left-[119px] not-italic text-[#000000] text-[18px] text-left text-nowrap top-[14.336px]">
-        <p className="block leading-[26px] whitespace-pre">All Ears</p>
+        <p className="block leading-[26px] whitespace-pre">Survey Builder for Teachers</p>
       </div>
       <div className="absolute css-iiw2qh font-['Chalkboard:Regular',_sans-serif] font-normal leading-[0] left-[1182px] not-italic text-[#111111] text-[18px] text-left text-nowrap top-[14.336px]">
         <p className="block leading-[26px] whitespace-pre">User ID</p>
