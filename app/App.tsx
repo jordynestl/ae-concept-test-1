@@ -3,6 +3,11 @@ import { NavHeader } from './components/NavHeader';
 import { useEffect } from 'react';
 
 export default function App() {
+  // Set document title
+  useEffect(() => {
+    document.title = 'Survey Builder for Teachers';
+  }, []);
+  
   // Load Maze Universal Snippet
   useEffect(() => {
     const apiKey = '69e0b013-3760-41d3-b9fa-da2d6ea757c4';

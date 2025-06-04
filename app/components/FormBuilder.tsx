@@ -7,7 +7,7 @@ import { AddFieldButton } from "./AddFieldButton";
 import { FormPreview } from "./FormPreview";
 
 export function FormBuilder() {
-  const [formTitle, setFormTitle] = useState("Feedback form title");
+  const [formTitle, setFormTitle] = useState("Untitled survey");
   const [isEditingTitle, setIsEditingTitle] = useState(false);
   const [editableTitle, setEditableTitle] = useState(formTitle);
   const [fields, setFields] = useState<FormFieldType[]>([]);
@@ -47,7 +47,7 @@ export function FormBuilder() {
     let newField: FormFieldType = {
       id: uuidv4(),
       type,
-      question: "Type your question here",
+      question: "", // Empty string to allow the placeholder to show
       required: false,
       options: [],
     };

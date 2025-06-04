@@ -27,6 +27,18 @@ export function AddFieldButton({ onAddField }: AddFieldButtonProps) {
           <div className="grid grid-cols-2 gap-1 p-2 min-w-[300px]">
             <button
               className="flex items-center gap-2 px-3 py-2 text-left hover:bg-gray-100 rounded"
+              onClick={() => handleAddField("section")}
+            >
+              <div className="size-5">
+                <svg className="block size-full" fill="none" viewBox="0 0 20 20">
+                  <path d="M2 4H18V6H2V4ZM2 9H18V11H2V9ZM2 14H12V16H2V14Z" fill="black" />
+                </svg>
+              </div>
+              Section
+            </button>
+            
+            <button
+              className="flex items-center gap-2 px-3 py-2 text-left hover:bg-gray-100 rounded"
               onClick={() => handleAddField("multiple_choice")}
             >
               <div className="size-5">
@@ -81,39 +93,26 @@ export function AddFieldButton({ onAddField }: AddFieldButtonProps) {
 
             <button
               className="flex items-center gap-2 px-3 py-2 text-left hover:bg-gray-100 rounded"
-              onClick={() => handleAddField("file_upload")}
+              onClick={() => handleAddField("ranking")}
             >
               <div className="size-5">
                 <svg className="block size-full" fill="none" viewBox="0 0 20 20">
-                  <path d="M16 10H14V16H6V10H4V16C4 17.1 4.9 18 6 18H14C15.1 18 16 17.1 16 16V10Z" fill="black" />
-                  <path d="M10 12L14 8L12.59 6.59L11 8.17V2H9V8.17L7.41 6.59L6 8L10 12Z" fill="black" />
+                  <path d="M2 4H6V6H2V4ZM2 8H6V10H2V8ZM2 12H6V14H2V12ZM8 4H18V6H8V4ZM8 8H18V10H8V8ZM8 12H18V14H8V12Z" fill="black" />
                 </svg>
               </div>
-              File upload
+              Ranking
             </button>
 
             <button
               className="flex items-center gap-2 px-3 py-2 text-left hover:bg-gray-100 rounded"
-              onClick={() => handleAddField("rating")}
+              onClick={() => handleAddField("image")}
             >
               <div className="size-5">
                 <svg className="block size-full" fill="none" viewBox="0 0 20 20">
-                  <path d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z" fill="black" />
+                  <path d="M16.8 2H3.2C2.54 2 2 2.54 2 3.2V16.8C2 17.46 2.54 18 3.2 18H16.8C17.46 18 18 17.46 18 16.8V3.2C18 2.54 17.46 2 16.8 2ZM16 15.4H4V4H16V15.4ZM11.6 10.8L9.2 13.8L7.6 12L5.2 15H14.8L11.6 10.8Z" fill="black" />
                 </svg>
               </div>
-              Rating
-            </button>
-
-            <button
-              className="flex items-center gap-2 px-3 py-2 text-left hover:bg-gray-100 rounded"
-              onClick={() => handleAddField("date")}
-            >
-              <div className="size-5">
-                <svg className="block size-full" fill="none" viewBox="0 0 20 20">
-                  <path d="M16 2H15V0H13V2H7V0H5V2H4C2.9 2 2 2.9 2 4V18C2 19.1 2.9 20 4 20H16C17.1 20 18 19.1 18 18V4C18 2.9 17.1 2 16 2ZM16 18H4V8H16V18ZM16 6H4V4H16V6Z" fill="black" />
-                </svg>
-              </div>
-              Date
+              Image
             </button>
           </div>
         </div>
